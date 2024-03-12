@@ -92,11 +92,44 @@ body {
     background: none;
     font-family: 'Sketch Gothic School', 'The Eldians', sans-serif;
     width: 150px;
-    
-    
+     
 }
 
 .options:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.difficultybtn {
+    position: absolute;
+    left: 25px;
+    top: 84px;
+    font-size: 18px;
+    border: none;
+    background: none;
+    font-family: 'Sketch Gothic School', 'The Eldians', sans-serif;
+    width: 150px;
+     
+}
+
+.difficultybtn:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.leaderboardbtn {
+    position: absolute;
+    left: 25px;
+    top: 122px;
+    font-size: 18px;
+    border: none;
+    background: none;
+    font-family: 'Sketch Gothic School', 'The Eldians', sans-serif;
+    width: 150px;
+     
+}
+
+.leaderboardbtn:hover {
     cursor: pointer;
     text-decoration: underline;
 }
@@ -112,6 +145,34 @@ body {
     font-family: 'Sketch Gothic School', 'The Eldians', sans-serif;
     width: 120px;
     height: 19px;
+    color: #e6c9a1;
+}
+
+.dbg {
+    position: absolute;
+    left: 40px;
+    top: 90px;
+    font-size: 11px;
+    border: none;
+    background-size: 50px;
+    background-color:#e6c9a1;
+    font-family: 'Sketch Gothic School', 'The Eldians', sans-serif;
+    width: 120px;
+    height: 18px;
+    color: #e6c9a1;
+}
+
+.lbBg {
+    position: absolute;
+    left: 40px;
+    top: 128px;
+    font-size: 11px;
+    border: none;
+    background-size: 50px;
+    background-color:#e6c9a1;
+    font-family: 'Sketch Gothic School', 'The Eldians', sans-serif;
+    width: 120px;
+    height: 18px;
     color: #e6c9a1;
 }
 
