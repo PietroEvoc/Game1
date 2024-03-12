@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Castle Crawlers</title>
+    <link rel="stylesheet" href="styles/BOOTSTRAP/bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/HP2.css">
+
+    <style>
+        @font-face {
+        font-family: 'Sketch Gothic School';
+        src: url('fonts/sketch_gothic_school/Sketch Gothic School.ttf') format('truetype'); 
+        }
+
+        @font-face {
+            font-family: 'The Eldians';
+            src: url('fonts/the_eldians/The Eldians.ttf') format('truetype');
+        }
+
+    </style>
+</head>
+<body>
+    <div class="mainParent container-fluid">
+
+        <div class="container" id="main">
+            <div class="buttonContainer_">
+
+                <button class="startButton button">Start</button>
+
+            </div>
+            <div class="optionsContainer">
+                <h1 class="optbg">background</h1>
+                <button class="options" id="open-popup">Options</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+          <span class="close lopt" id="close-popup">X</span>
+
+          <h1 class="lopt">Options:</h1>
+
+<!-- Music Volume -->
+
+          <label for="musicVolume" class="lopt">Music Volume</label>
+            
+          <input type="range" class="musicVolume" id="musicVolume" min="0" max="100" value="50">
+          
+          <audio id="bg-music" autoplay loop>
+          
+            <source src="music/feast-days-simon-folwar-main-ver.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+          
+                <span id="volume-value" class="lopt">50</span>
+          
+                <br>
+<!-- Game volume -->
+
+                <label for="gameVolume" class="lopt">Game Volume:</label>
+          
+                <input type="range" class="gameVolume" id="gameVolume" min="0" max="100" value="50">
+          
+                <span id="volume-value2" class="lopt">50</span>
+          
+                <br>
+          
+                <label for="language" class="lopt">Language:</label>
+          
+                <select class="language lopt" id="language">
+          
+                    <option value="english" class="lopt">English</option>
+          
+                    <option value="spanish" class="lopt">Spanish</option>
+          
+                </select>
+
+        </div>
+    </div>
+
+    <script src="javascriptP/script.js"></script>
+</body>
+</html>
