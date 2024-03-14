@@ -1,14 +1,11 @@
 // Import the functions you need from the SDKs you need
-// import { initializeApp } from "firebase/app";
-// import { getAnalytics } from "firebase/analytics";
-// import { getAuth } from "firebase/auth";
-// import { getDatabase } from "firebase/database";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { getAuth } from "firebase/auth";
+import { getDatabase } from "firebase/database";
 
 // Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
+var firebaseConfig = {
     apiKey: "AIzaSyAzr3aKV9r57a3VKG5mqzMoGoft1bIJ6tY",
     authDomain: "castlecrawlers.firebaseapp.com",
     projectId: "castlecrawlers",
@@ -16,27 +13,26 @@ const firebaseConfig = {
     messagingSenderId: "234213109184",
     appId: "1:234213109184:web:c944264157978385572c25",
     measurementId: "G-9Q55MYB7ED"
-  };
-
-
+};
+firebase.initializeApp(firebaseConfig);
 // Initialize Firebase
-const app = firebase.initializeApp(firebaseConfig);
-const analytics = firebase.getAnalytics(app); // Fixed typo here
-const auth = firebase.getAuth(app); // Fixed typo here
-const database = firebase.getDatabase(app); // Fixed typo here
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const auth = getAuth(app);
+const database = getDatabase(app);
 
-firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-        // Firebase is initialized, you can now call the register function
-        console.log("Firebase initialized:", user);
-    } else {
-        // No user is signed in, handle this case if necessary
-        console.log("Firebase not initialized");
-    }
-});
+// firebase.auth().onAuthStateChanged(function(user) {
+//     if (user) {
+//         // Firebase is initialized, you can now call the register function
+//         console.log("Firebase initialized:", user);
+//     } else {
+//         // No user is signed in, handle this case if necessary
+//         console.log("Firebase not initialized");
+//     }
+// });
 
 // Register function
-function register() {
+function register () {
     // Get all input fields
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
@@ -50,22 +46,38 @@ function register() {
 
     // Create new user with email and password
     auth.createUserWithEmailAndPassword(email, password)
-    .then((userCredential) => {
-        // User creation successful, add user data to the database
-        const user = userCredential.user;
+    .then(function() {
 
-        const userData = {
-            email: email,
-            username: username,
-            last_login: Date.now()
-        };
+        var user = auth.currentUser
 
-        // Add user data to the database
-        const databaseRef = database.ref();
-        databaseRef.child('users/' + user.uid).set(userData);
+        var database_ref = database.ref()
+
+        var user_data = {
+            email : email,
+            username : username,
+            last_login : Date.now()
+        }
+
+        database_ref.child('users/' + user.uid).set(user_data)
+
 
         alert('User created successfully!');
     })
+    // .then((userCredential) => {
+    //     // User creation successful, add user data to the database
+    //     const user = userCredential.user;
+
+    //     const userData = {
+    //         email: email,
+    //         username: username,
+    //         last_login: Date.now()
+    //     };
+
+    //     // Add user data to the database
+    //     const databaseRef = database.ref();
+    //     databaseRef.child('users/' + user.uid).set(userData);
+
+    // })
     .catch((error) => {
         // User creation failed, display error message
         const errorCode = error.code;
