@@ -48,3 +48,26 @@ volumeControl.addEventListener('input', function() {
   bgMusic.volume = volumeValue / 100;
 });
 
+//Login PopUp
+
+document.addEventListener("DOMContentLoaded", function() {
+    const openPopupBtnL = document.getElementById('open-popupL');
+    const closePopupBtnL = document.getElementById('close-popupL');
+    const popupL = document.getElementById('popupL');
+  
+    openPopupBtnL.addEventListener('click', function() {
+      popupL.style.display = 'block'; /* Show the popup */
+    });
+  
+    closePopupBtnL.addEventListener('click', function() {
+      popupL.style.display = 'none'; /* Hide the popup */
+    });
+  
+    // Close popup when clicking outside of it
+    window.addEventListener('click', function(event) {
+      if (event.target === popupL) {
+        popupL.style.display = 'none';
+      }
+    });
+  });
+  
