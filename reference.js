@@ -1,18 +1,21 @@
+const auth = firebase.auth()
+const database = firebase.database()
 // Your web app's Firebase configuration
-var firebaseConfig = {
-    apiKey: "AIzaSyAzr3aKV9r57a3VKG5mqzMoGoft1bIJ6tY",
-    authDomain: "castlecrawlers.firebaseapp.com",
-    projectId: "castlecrawlers",
-    storageBucket: "castlecrawlers.appspot.com",
-    messagingSenderId: "234213109184",
-    appId: "1:234213109184:web:c944264157978385572c25",
-    measurementId: "G-9Q55MYB7ED"
-  };
+const firebaseConfig = {
+  apiKey: "AIzaSyAGxOXZNWDmwzUyyHlcQ4MsjdtHtXC5E00",
+  authDomain: "castlecrawlers-f0369.firebaseapp.com",
+  projectId: "castlecrawlers-f0369",
+  storageBucket: "castlecrawlers-f0369.appspot.com",
+  messagingSenderId: "137343873527",
+  appId: "1:137343873527:web:d52d121d4d926a16fbbef2",
+  measurementId: "G-GH33G5MCFP"
+};
+
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   // Initialize variables
-  const auth = firebase.auth()
-  const database = firebase.database()
+  // const auth = firebase.auth()
+  // const database = firebase.database()
   
   // Set up our register function 
   function register () {

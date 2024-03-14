@@ -4,16 +4,16 @@ import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 import { getDatabase } from "firebase/database";
 
-// Your web app's Firebase configuration
-var firebaseConfig = {
-    apiKey: "AIzaSyAzr3aKV9r57a3VKG5mqzMoGoft1bIJ6tY",
-    authDomain: "castlecrawlers.firebaseapp.com",
-    projectId: "castlecrawlers",
-    storageBucket: "castlecrawlers.appspot.com",
-    messagingSenderId: "234213109184",
-    appId: "1:234213109184:web:c944264157978385572c25",
-    measurementId: "G-9Q55MYB7ED"
-};
+const firebaseConfig = {
+    apiKey: "AIzaSyAGxOXZNWDmwzUyyHlcQ4MsjdtHtXC5E00",
+    authDomain: "castlecrawlers-f0369.firebaseapp.com",
+    projectId: "castlecrawlers-f0369",
+    storageBucket: "castlecrawlers-f0369.appspot.com",
+    messagingSenderId: "137343873527",
+    appId: "1:137343873527:web:d52d121d4d926a16fbbef2",
+    measurementId: "G-GH33G5MCFP"
+  };
+  
 firebase.initializeApp(firebaseConfig);
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
@@ -21,15 +21,15 @@ const analytics = getAnalytics(app);
 const auth = getAuth(app);
 const database = getDatabase(app);
 
-// firebase.auth().onAuthStateChanged(function(user) {
-//     if (user) {
-//         // Firebase is initialized, you can now call the register function
-//         console.log("Firebase initialized:", user);
-//     } else {
-//         // No user is signed in, handle this case if necessary
-//         console.log("Firebase not initialized");
-//     }
-// });
+firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+        // Firebase is initialized, you can now call the register function
+        console.log("Firebase initialized:", user);
+    } else {
+        // No user is signed in, handle this case if necessary
+        console.log("Firebase not initialized");
+    }
+});
 
 // Register function
 function register () {

@@ -20,10 +20,6 @@
 
     </style>
 
-<!-- <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-analytics.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-database.js"></script> -->
 
 </head>
 <body>
@@ -131,8 +127,8 @@
         
                             <div id="button_container">
         
-                                <button class="buttonL" onclick="login()">Login</button>
-                                <button class="buttonL" onclick="register()">Register</button>
+                                <button class="buttonL" id="login-btn" >Login</button>
+                                <button class="buttonL" id="register-btn" >Register</button>
         
                             </div>
         
@@ -149,8 +145,11 @@
 
     </div>
 
-    <script src="javascriptP/script.js"></script>
-    <script src="firebase.js"></script>
     <!-- <script src="reference.js"></script> -->
+    <script src="javascriptP/script.js"></script>
+    <!-- <script src="javascriptP/firebase.js"></script> -->
+
+
+    <script src="javascriptP\fbst.js" type="module"></script>
 </body>
 </html>
