@@ -71,3 +71,29 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
   
+//Leader Board Pop-up
+
+document.addEventListener("DOMContentLoaded", function() {
+  const openPopupBtnlb = document.getElementById('open-popup-lb');
+  const closePopupBtnlb = document.getElementById('close-popup-lb');
+  const popuplb = document.getElementById('popup-lb');
+
+  // console.log(openPopupBtnlb); // Debugging
+  // console.log(closePopupBtnlb); // Debugging
+  // console.log(popuplb); // Debugging
+
+  openPopupBtnlb.addEventListener('click', function() {
+    popuplb.style.display = 'block';
+  });
+
+  closePopupBtnlb.addEventListener('click', function() {
+    popuplb.style.display = 'none';
+  });
+
+  // Close popup when clicking outside of it
+  window.addEventListener('click', function(event) {
+    if (event.target === popuplb) {
+      popuplb.style.display = 'none';
+    }
+  });
+});
