@@ -49,7 +49,7 @@
 
                 <!-- Difficulty -->
                 <h1 class="dbg">background</h1>
-                <button class="difficultybtn" id="">Difficulty</button>
+                <button class="difficultybtn" id="open-popup-df">Difficulty</button>
 
                 <!-- Leader Board -->
                 <h1 class="lbBg">background</h1>
@@ -58,6 +58,20 @@
             </div>
 
             <div class="lbtncontainer">
+
+                    <!-- Instruction PopUp -->
+                <div class="popincon">
+                    <div id="popup-in" class="popup-in">
+                        <div class="popup-content-in">
+                        <span class="close-in" id="close-popup-in">&times;</span>
+                        
+                        <p>Login/Register here! <img class="arrowins" src="/images/imgbin-arrow-icon-arrow-right-red-arrow-illustration-mwSAyGMQhWh6wNfm2QjYvBthg.png"></p>
+
+
+                        </div>
+                    </div>
+                </div>  
+
                 <button id="open-popupL" class="lrbtn"></button>
             </div>
 
@@ -78,7 +92,7 @@
             
           <input type="range" class="musicVolume" id="musicVolume" min="0" max="100" value="50">
           
-          <audio id="bg-music" autoplay loop>
+          <audio id="bg-music" class="bg-music" autoplay loop>
           
             <source src="music/feast-days-simon-folwar-main-ver.mp3" type="audio/mp3">
                     Your browser does not support the audio element.
@@ -180,25 +194,50 @@
         </div>
     </div>
 
-    <!-- Illia's code -->
-    <!-- <div class="complete">
-        <h3>Maze Completed.</h3>
-        <button class="replay" id="submit">Play again</button>
-        <button class="close" id="submit">Close</button>
-    </div> -->
+    <!-- Difficulty -->
+
+    <div id="popup-df" class="popup-df">
+
+        <div class="popup-content-df">
+
+            <span class="close-df" id="close-popup-df">X</span>
+
+            <H1 class="difficultytitle">Difficulty:</H1>
+
+            <form id="difficultyform">
+
+                <label for="easy">Easy</label>
+                <input type="radio" id="easy">
+                <br>
+                <label for="normal">Normal</label>
+                <input type="radio" id="normal">
+                <br>
+                <label for="hard">Hard</label>
+                <input type="radio" id="hard">
+
+            </form>
+
+        
+
+        </div>
+
+    </div>
+
+    <!-- Instruction PopUp
+<div class="popincon">
+    <div id="popup-in" class="popup-in">
+        <div class="popup-content-in">
+          <span class="close-in" id="close-popup-in">&times;</span>
+          
+          <p>Login/Register here! <img class="arrowins" src="/images/imgbin-arrow-icon-arrow-right-red-arrow-illustration-mwSAyGMQhWh6wNfm2QjYvBthg.png"></p>
 
 
-    <!-- <canvas class="maze" width="850" height="700"></canvas> -->
-    
-    <!-- Illia's links -->
-    
-    <!-- <script src="MAZE/maze.js"></script>
-    <script src="MAZE/settings.js"></script> -->
-    
-    <!-- <script src="javascriptP/script.js"></script> -->
-    
-    <!-- <script src="reference.js"></script> -->
-    <!-- <script src="javascriptP/firebase.js"></script>  -->
+        </div>
+      </div>
+</div>   -->
+
+
+
 
     <script src="javascriptP/fbst.js" type="module"></script>
     

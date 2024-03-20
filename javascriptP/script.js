@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     openPopupBtn.addEventListener('click', function() {
       popup.style.display = 'block';
       console.log('Options button was clicked');
+      alert('Feature comming soon!');
     });
 
     closePopupBtn.addEventListener('click', function() {
@@ -44,6 +45,9 @@ const volumeControl = document.getElementById('musicVolume');
 const volumeValueDisplay = document.getElementById('volume-value');
 const bgMusic = document.getElementById('bg-music');
 
+//music2
+const bgMusic2 = document.getElementById('bg-music2');
+
 // Add event listener to the volume input
 volumeControl.addEventListener('input', function() {
   const volumeValue = volumeControl.value;
@@ -51,6 +55,9 @@ volumeControl.addEventListener('input', function() {
   
   // Set the volume of the audio element based on the value of the input
   bgMusic.volume = volumeValue / 100;
+
+  // //music2
+  // bgMusic2.volume = volumeValue / 100;
 });
 
 //Login PopUp
@@ -89,6 +96,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
   openPopupBtnlb.addEventListener('click', function() {
     popuplb.style.display = 'block';
+
+    alert('Feature comming soon!');
   });
 
   closePopupBtnlb.addEventListener('click', function() {
@@ -99,6 +108,61 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener('click', function(event) {
     if (event.target === popuplb) {
       popuplb.style.display = 'none';
+    }
+  });
+});
+
+//Difficulty PopUp
+
+document.addEventListener("DOMContentLoaded", function() {
+  const openPopupBtndf = document.getElementById('open-popup-df');
+  const closePopupBtndf = document.getElementById('close-popup-df');
+  const popupdf = document.getElementById('popup-df');
+
+  console.log(openPopupBtndf); // Debugging
+  console.log(closePopupBtndf); // Debugging
+  console.log(popupdf); // Debugging
+
+  openPopupBtndf.addEventListener('click', function() {
+    popupdf.style.display = 'block';
+
+    alert('Feature comming soon!');
+  });
+
+  closePopupBtndf.addEventListener('click', function() {
+    popupdf.style.display = 'none';
+  });
+
+  // Close popup when clicking outside of it
+  window.addEventListener('click', function(event) {
+    if (event.target === popupdf) {
+      popupdf.style.display = 'none';
+    }
+  });
+});
+
+//Instruction PopUp
+
+document.addEventListener("DOMContentLoaded", function() {
+  const popupin = document.getElementById("popup-in");
+  const closePopupin = document.getElementById("close-popup-in");
+
+  // Check if the popup should be displayed
+  const popupShown = localStorage.getItem("popupShown");
+  if (!popupShown) {
+    popupin.style.display = "block";
+    localStorage.setItem("popupShown", true);
+  }
+
+  // Close the popup when the close button is clicked
+  closePopupin.addEventListener("click", function() {
+    popupin.style.display = "none";
+  });
+
+  // Close the popup when clicking outside of it
+  window.addEventListener("click", function(event) {
+    if (event.target === popupin) {
+      popupin.style.display = "none";
     }
   });
 });

@@ -146,7 +146,7 @@ body {
     border: none;
     background-size: 50px;
     background-color:#e6c9a1;
-    font-family: 'Sketch Gothic School', 'The Eldians', sans-serif;
+    font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
     width: 120px;
     height: 19px;
     color: #e6c9a1;
@@ -160,7 +160,7 @@ body {
     border: none;
     background-size: 50px;
     background-color:#e6c9a1;
-    font-family: 'Sketch Gothic School', 'The Eldians', sans-serif;
+    font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
     width: 120px;
     height: 18px;
     color: #e6c9a1;
@@ -174,7 +174,7 @@ body {
     border: none;
     background-size: 50px;
     background-color:#e6c9a1;
-    font-family: 'Sketch Gothic School', 'The Eldians', sans-serif;
+    font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
     width: 120px;
     height: 18px;
     color: #e6c9a1;
@@ -213,7 +213,7 @@ body {
 
   .lopt {
     font-size: 27px;
-    font-family: 'Sketch Gothic School', 'The Eldians', sans-serif;
+    font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
   }
   
   select {
@@ -281,7 +281,7 @@ body {
     background-repeat: no-repeat;
     border: solid 3px goldenrod;
     font-size: 27px;
-    font-family: 'Sketch Gothic School', 'The Eldians', sans-serif;
+    font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
 
   }
 
@@ -323,8 +323,10 @@ body {
 }
 
 .lbtncontainer {
-    width: 60px;
-    height: 60px;
+    /* width: 60px;
+    height: 60px; */
+    width: 200px;
+    height: 200px;
     align-items: center;
     position: relative;
     background-position: center;
@@ -356,7 +358,7 @@ body {
   background-repeat: no-repeat;
   /* border: solid 3px goldenrod; */
   font-size: 27px;
-  font-family: 'Sketch Gothic School', 'The Eldians', sans-serif;
+  font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
   height: 750px;
   width: 700px;
   position: absolute;
@@ -409,16 +411,25 @@ body {
 .startgame {
   width: 100px;
   height: 100px;
+ 
+ 
 
 }
 
 .startgamebtn {
   width: 100px;
   height: 50px;
+  background-color: goldenrod;
+  border-radius: 5px;
+  font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
+  font-size: 10px;
+  
 }
 
 .startgamebtn:hover {
   cursor: pointer;
+  transition: 0.3s ease;
+  border: double #e6d2a2 5px;
 }
 
 .btnstart {
@@ -428,6 +439,9 @@ body {
   background-position: center;
   width: 60px;
   height: 60px;
+  border-radius: 10px;
+  margin-left: 15px;
+  
 }
 
 .btnstart:hover {
@@ -441,7 +455,7 @@ body {
 }
 
 #body2 {
-  background-image: url('/images/Designer-2 copy.png');
+  /* background-image: url('/images/Designer-2 copy.png'); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -457,4 +471,141 @@ body {
   align-items: center;
   font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
   
+}
+
+/* Difficulty popup */
+
+.popup-df {
+  display: none; /* Hide the popup by default */
+  position: fixed; /* Position the popup relative to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 999; /* Ensure the popup is on top of other content */
+}
+
+.popup-content-df {
+  background-image: url('/images/Designer-2.png');
+  background-size: 800px 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* border: solid 3px goldenrod; */
+  font-size: 27px;
+  font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
+  height: 750px;
+  width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the popup content */
+  /* border-radius: 5px; */
+
+
+}
+
+.close-df {
+  position: absolute;
+  top: 175px;
+  right: 200px;
+  cursor: pointer;
+  padding-right: 8px;
+
+
+}
+
+.close-df:hover {
+    /* position: absolute;
+    align-self: center; */
+    cursor: pointer;
+    /* transition: 0.3s ease; */
+    /* border: double #e6d2a2 5px; */
+    text-decoration: underline;
+}
+
+.difficultytitle {
+  position: absolute;
+  /* transform: translate(210%, 500%); */
+  top: 220px;
+  left: 280px;
+  font-size: 40px;
+  
+}
+
+#difficultyform {
+  position: absolute;
+  /* transform: translate(100%, 800%); */
+  top: 300px;
+  left: 300px;
+  font-size: 40px;
+
+}
+
+.arrowkeyscontainer {
+  width: 100px;
+  text-align: center;
+  
+}
+#arrowkey {
+  width: 90px;
+  /* height: 50px; */
+}
+
+.instArrow{
+
+  font-size: 20px;
+}
+
+.popup-in {
+  display: none; /* Initially hide the popup */
+  position: absolute;
+  /* top: 140px;
+  left: 600px; */
+  /* transform: translate(-50%, -50%); */
+  background-image: url('/images/grunge-certificate-with-vintage-ornamental-frame.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  border: solid 4px goldenrod;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
+  font-size: 12px;
+
+  width: 150px;
+  height: 80px;
+}
+
+.popup-content-in {
+  text-align: center;
+}
+
+.close-in {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.popincon {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: -90px;
+  right: 70px;
+}
+
+.arrowins {
+  width: 60px;
+  height: 30px;
+  transform: rotate(100deg);
+ 
+}
+
+.music2 {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
 }
