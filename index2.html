@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME</title>
+
+    <style>
+        @font-face {
+        font-family: 'Sketch Gothic School';
+        src: url('fonts/sketch_gothic_school/Sketch Gothic School.ttf') format('truetype'); 
+        }
+
+        @font-face {
+            font-family: 'The Eldians';
+            src: url('fonts/the_eldians/The Eldians.ttf') format('truetype');
+        }
+
+    </style>
+
+
+        <!-- Illia's links -->
+        <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <link href="styles/HP2.css" rel="stylesheet">
+    <link href="MAZE/style.css" rel="stylesheet">
+</head>
+<body id="b1">
+
+<div id="body2">
+    <div class="startContainer">
+        <form id="settings" action="" class="startgame">
+            <input id="submit" type="submit" value="Enter Dungeon" class="startgamebtn">
+        </form>
+    </div>
+    <div class="bhcontainer">
+        <a href="indexHP2.html"><button class="btnstart"></button></a>
+    </div>
+        <div class="complete">
+            <h3>Maze Completed.</h3>
+            <button class="replay" id="submit">Play again</button>
+            <button class="close" id="submit">Close</button>
+        </div>
+
+        
+        <canvas class="maze" width="850" height="700"></canvas>
+
+        <script src="MAZE/maze.js"></script>
+        <script src="MAZE/settings.js"></script>
+</div>
+</body>
+</html>

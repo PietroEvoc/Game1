@@ -1,3 +1,7 @@
+console.log("Script loaded");
+
+// options popup
+
 document.addEventListener("DOMContentLoaded", function() {
     const openPopupBtn = document.getElementById('open-popup');
     const closePopupBtn = document.getElementById('close-popup');
@@ -9,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     openPopupBtn.addEventListener('click', function() {
       popup.style.display = 'block';
+      console.log('Options button was clicked');
     });
 
     closePopupBtn.addEventListener('click', function() {
@@ -27,11 +32,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 const optionsSelect = document.getElementById('language');
 
-optionsSelect.addEventListener('change', function() {
-  const selectedOption = optionsSelect.value;
-  console.log('Selected option:', selectedOption);
-  // You can perform any action based on the selected option here
-});
+// optionsSelect.addEventListener('change', function() {
+//   const selectedOption = optionsSelect.value;
+//   console.log('Selected option:', selectedOption);
+//   // You can perform any action based on the selected option here
+// });
 
 
 // Get references to the volume input, the volume value display, and the audio element
@@ -78,9 +83,9 @@ document.addEventListener("DOMContentLoaded", function() {
   const closePopupBtnlb = document.getElementById('close-popup-lb');
   const popuplb = document.getElementById('popup-lb');
 
-  // console.log(openPopupBtnlb); // Debugging
-  // console.log(closePopupBtnlb); // Debugging
-  // console.log(popuplb); // Debugging
+  console.log(openPopupBtnlb); // Debugging
+  console.log(closePopupBtnlb); // Debugging
+  console.log(popuplb); // Debugging
 
   openPopupBtnlb.addEventListener('click', function() {
     popuplb.style.display = 'block';

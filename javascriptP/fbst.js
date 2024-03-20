@@ -66,3 +66,5 @@ document.getElementById('register-btn').addEventListener('click', function() {
             alert(errorMessage);
         });
 });
+
+//Main script
