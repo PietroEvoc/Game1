@@ -34,6 +34,10 @@ document.getElementById('login-btn').addEventListener('click', function() {
             // Signed in
             const user = userCredential.user;
             alert('Login successful');
+
+            document.getElementById('email').value = '';
+            document.getElementById('password').value = '';
+            document.getElementById('username').value = '';
             // You can redirect to another page or perform other actions here
         })
         .catch((error) => {
@@ -59,6 +63,10 @@ document.getElementById('register-btn').addEventListener('click', function() {
                 username: username
             });
             alert('User registered successfully');
+
+            document.getElementById('email').value = '';
+            document.getElementById('password').value = '';
+            document.getElementById('username').value = '';
             // You can redirect to another page or perform other actions here
         })
         .catch((error) => {
@@ -67,4 +75,3 @@ document.getElementById('register-btn').addEventListener('click', function() {
         });
 });
 
-//Main script

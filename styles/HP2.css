@@ -528,7 +528,7 @@ body {
   position: absolute;
   /* transform: translate(210%, 500%); */
   top: 220px;
-  left: 280px;
+  left: 210px;
   font-size: 40px;
   
 }
@@ -537,7 +537,7 @@ body {
   position: absolute;
   /* transform: translate(100%, 800%); */
   top: 300px;
-  left: 300px;
+  left: 280px;
   font-size: 40px;
 
 }

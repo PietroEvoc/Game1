@@ -65,16 +65,16 @@
             
             <!-- <input type="range" class="musicVolume" id="musicVolume2" min="0" max="100" value="50"> -->
             
-            <audio id="bg-music2" autoplay loop>
+            <audio id="bg-music2" autoplay loop >
             
-              <source src="music/arrival-of-a-princess-aaron-paul-low-main-version-20384-01-00.mp3" type="audio/mp3">
+              <source src="/music/arrival-of-a-princess-aaron-paul-low-main-version-20384-01-00.mp3" type="audio/mp3">
                       Your browser does not support the audio element.
                   </audio>
             
                   <!-- <span id="volume-value" class="lopt">50</span> -->
 
         </div>
-
+        <input type="range" id="volumeControl2" min="0" max="100" value="50" step="1">
             <!-- Instruction PopUp -->
             
         <div class="popincon">
@@ -89,8 +89,17 @@
             </div>
         </div>  
 
+
+
+
+        <!-- Sound effects -->
+        <audio id="keySound" src="music/retro-game-coin-pickup-jam-fx-1-00-03.mp3"></audio>
+
+
         <script src="MAZE/maze.js"></script>
         <script src="MAZE/settings.js"></script>
+
+        <script src="javascriptP/fbst.js" type="module"></script>
 </div>
 </body>
 </html>

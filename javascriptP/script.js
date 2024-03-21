@@ -46,7 +46,7 @@ const volumeValueDisplay = document.getElementById('volume-value');
 const bgMusic = document.getElementById('bg-music');
 
 //music2
-const bgMusic2 = document.getElementById('bg-music2');
+// const bgMusic2 = document.getElementById('bg-music2');
 
 // Add event listener to the volume input
 volumeControl.addEventListener('input', function() {
@@ -56,7 +56,7 @@ volumeControl.addEventListener('input', function() {
   // Set the volume of the audio element based on the value of the input
   bgMusic.volume = volumeValue / 100;
 
-  // //music2
+  //music2
   // bgMusic2.volume = volumeValue / 100;
 });
 
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
   console.log(popuplb); // Debugging
 
   openPopupBtnlb.addEventListener('click', function() {
-    popuplb.style.display = 'block';
+    // popuplb.style.display = 'block'; Uncomment to make it work again
 
     alert('Feature comming soon!');
   });
@@ -166,3 +166,26 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+
+//audio volume
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   // Get references to the volume input and the audio element
+//   const volumeControl2 = document.getElementById('volumeControl2');
+//   const bgMusic22 = document.getElementById('bg-music2');
+
+//   // Add event listener to the volume input
+//   volumeControl2.addEventListener('input', function() {
+//     // Get the volume value from the input (between 0 and 100)
+//     const volumeValue2 = volumeControl2.value;
+    
+//     // Set the volume of the audio element based on the value of the input (between 0 and 1)
+//     bgMusic22.volume = volumeValue2 / 100;
+//   });
+// });
+
+// Get a reference to the audio element
+const bgMusic2 = document.getElementById('bg-music2');
+
+// Set the volume (between 0 and 1, where 0 is mute and 1 is full volume)
+bgMusic2.volume = 0.5; // Example: set volume to 50%
