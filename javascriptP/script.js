@@ -188,4 +188,4 @@ document.addEventListener("DOMContentLoaded", function() {
 const bgMusic2 = document.getElementById('bg-music2');
 
 // Set the volume (between 0 and 1, where 0 is mute and 1 is full volume)
-bgMusic2.volume = 0.5; // Example: set volume to 50%
+bgMusic2.volume = 0.5; // Example: set volume to 50%.

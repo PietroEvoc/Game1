@@ -467,11 +467,11 @@ body {
   
 }
 
-#b1 {
+/* #b1 {
   align-items: center;
   font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
   
-}
+} */
 
 /* Difficulty popup */
 
@@ -609,3 +609,8 @@ body {
   bottom: 5px;
   left: 5px;
 }
+
+  body {
+    overflow: hidden;
+}
+
