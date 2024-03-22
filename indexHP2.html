@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,30 +12,30 @@
 
     <style>
         @font-face {
-        font-family: 'Sketch Gothic School';
-        src: url('fonts/sketch_gothic_school/Sketch Gothic School.ttf') format('truetype'); 
+            font-family: 'Sketch Gothic School';
+            src: url('fonts/sketch_gothic_school/Sketch Gothic School.ttf') format('truetype');
         }
 
         @font-face {
             font-family: 'The Eldians';
             src: url('fonts/the_eldians/The Eldians.ttf') format('truetype');
         }
-
     </style>
 
 
-        <!-- Illia's links -->
-        <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="MAZE/style.css" />
+    <!-- Illia's links -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="MAZE/style.css" />
 
 
 </head>
+
 <body>
     <div class="mainParent container-fluid">
 
         <div class="container" id="main">
-            <div class="buttonContainer_" >
+            <div class="buttonContainer_">
 
                 <a href="index2.html"><button class="startButton button">Start</button></a>
 
@@ -59,18 +60,20 @@
 
             <div class="lbtncontainer">
 
-                    <!-- Instruction PopUp -->
+                <!-- Instruction PopUp -->
                 <div class="popincon">
                     <div id="popup-in" class="popup-in">
                         <div class="popup-content-in">
-                        <span class="close-in" id="close-popup-in">&times;</span>
-                        
-                        <p>Login/Register here! <img class="arrowins" src="/images/imgbin-arrow-icon-arrow-right-red-arrow-illustration-mwSAyGMQhWh6wNfm2QjYvBthg.png"></p>
+                            <span class="close-in" id="close-popup-in">&times;</span>
+
+                            <p>Login/Register here! <img class="arrowins"
+                                    src="/images/imgbin-arrow-icon-arrow-right-red-arrow-illustration-mwSAyGMQhWh6wNfm2QjYvBthg.png">
+                            </p>
 
 
                         </div>
                     </div>
-                </div>  
+                </div>
 
                 <button id="open-popupL" class="lrbtn"></button>
             </div>
@@ -78,58 +81,58 @@
         </div>
     </div>
 
-<!-- options -->
+    <!-- options -->
 
     <div id="popup" class="popup">
         <div class="popup-content">
-          <span class="close lopt" id="close-popup">X</span>
+            <span class="close lopt" id="close-popup">X</span>
 
-          <h1 class="lopt">Options:</h1>
+            <h1 class="lopt">Options:</h1>
 
-<!-- Music Volume -->
+            <!-- Music Volume -->
 
-          <label for="musicVolume" class="lopt">Music Volume</label>
-            
-          <input type="range" class="musicVolume" id="musicVolume" min="0" max="100" value="50">
-          
-          <audio id="bg-music" class="bg-music" autoplay loop>
-          
-            <source src="music/feast-days-simon-folwar-main-ver.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-          
-                <span id="volume-value" class="lopt">50</span>
-          
-                <br>
-<!-- Game volume -->
+            <label for="musicVolume" class="lopt">Music Volume</label>
 
-                <label for="gameVolume" class="lopt">Game Volume:</label>
-          
-                <input type="range" class="gameVolume" id="gameVolume" min="0" max="100" value="50">
-          
-                <span id="volume-value2" class="lopt">50</span>
-          
-                <br>
-<!-- Language -->
-                <label for="language" class="lopt">Language:</label>
-          
-                <select class="language lopt" id="language">
-          
-                    <option value="english" class="lopt">English</option>
-          
-                    <option value="spanish" class="lopt">Spanish</option>
-          
-                </select>
-                <br>
-<!-- Account -->
-                <br>
-                <button class="accountbtn" id="accountbtn">Account</button>
+            <input type="range" class="musicVolume" id="musicVolume" min="0" max="100" value="50">
+
+            <audio id="bg-music" class="bg-music" autoplay loop>
+
+                <source src="music/feast-days-simon-folwar-main-ver.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+
+            <span id="volume-value" class="lopt">50</span>
+
+            <br>
+            <!-- Game volume -->
+
+            <label for="gameVolume" class="lopt">Game Volume:</label>
+
+            <input type="range" class="gameVolume" id="gameVolume" min="0" max="100" value="50">
+
+            <span id="volume-value2" class="lopt">50</span>
+
+            <br>
+            <!-- Language -->
+            <label for="language" class="lopt">Language:</label>
+
+            <select class="language lopt" id="language">
+
+                <option value="english" class="lopt">English</option>
+
+                <option value="spanish" class="lopt">Spanish</option>
+
+            </select>
+            <br>
+            <!-- Account -->
+            <br>
+            <button class="accountbtn" id="accountbtn">Account</button>
 
         </div>
     </div>
 
     <!-- LOG IN -->
- 
+
 
     <div id="popupL" class="popupL">
 
@@ -140,32 +143,32 @@
             <div id="content_container">
 
                 <div id="form_container">
-        
+
                     <div id="form_header_container">
                         <h2 id="form_header">Login</h2>
                     </div>
-        
+
                     <div id="form_content_container">
                         <div id="form_content_inner_container">
-        
+
                             <input type="text" class="optl" id="username" placeholder="Username"> <br>
                             <input type="email" class="optl" id="email" placeholder="Email">
-                            <input type="password" class="optl"  id="password" placeholder="New Password">
-        
+                            <input type="password" class="optl" id="password" placeholder="New Password">
+
                             <div id="button_container">
-        
-                                <button class="buttonL" id="login-btn" >Login</button>
-                                <button class="buttonL" id="register-btn" >Register</button>
-        
+
+                                <button class="buttonL" id="login-btn">Login</button>
+                                <button class="buttonL" id="register-btn">Register</button>
+
                             </div>
-        
+
                         </div>
-        
-        
+
+
                     </div>
-        
+
                 </div>
-        
+
             </div>
 
         </div>
@@ -178,15 +181,15 @@
 
         <div class="popup-content-lb">
 
-          <span class="close-lb" id="close-popup-lb">X</span>
+            <span class="close-lb" id="close-popup-lb">X</span>
 
-          <h1 class="lopt leaderboardtitle">Leader-Board</h1>
+            <h1 class="lopt leaderboardtitle">Leader-Board</h1>
 
-          <table class="leaderboardtable" id="leaderboardtable">
+            <table class="leaderboardtable" id="leaderboardtable">
 
-            <li></li>
+                <li></li>
 
-          </table>
+            </table>
 
 
 
@@ -217,7 +220,7 @@
 
             </form>
 
-        
+
 
         </div>
 
@@ -240,12 +243,13 @@
 
 
     <script src="javascriptP/fbst.js" type="module"></script>
-    
+
     <script src="javascriptP/script.js"></script>
-    
+
 
 
     <!-- <script src="reference.js" type="module"></script> -->
 
 </body>
+
 </html>

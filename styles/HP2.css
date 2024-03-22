@@ -1,354 +1,369 @@
 #main {
-    background-image: url('/images/_27de7944-d4d6-4f40-9cea-a7d8e0afec6c.jpg');
-    height: 700px;
-    width: 700px;
-    max-width: 700px;
-    min-width: 700px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 50px;
-    border: solid 4px;
-    border-color: goldenrod;
-    border-radius: 20px;
+  background-image: url('/images/_27de7944-d4d6-4f40-9cea-a7d8e0afec6c.jpg');
+  height: 700px;
+  width: 700px;
+  max-width: 700px;
+  min-width: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 50px;
+  border: solid 4px;
+  border-color: goldenrod;
+  border-radius: 20px;
 }
 
 .mainParent {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
 }
 
 .startButton {
-    
-    background-image: url('/images/bgButton.png');
-    background-size: 150px;
-    background-position: center;       
-    background-color: transparent;
-    border: none;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    /* position: fixed; */
-    font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
-    font-size: 25px;
-    color: #e6d2a2;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 
-    position: absolute;
-    top: 50px;
-    left: 50px;
+  background-image: url('/images/bgButton.png');
+  background-size: 150px;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  /* position: fixed; */
+  font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
+  font-size: 25px;
+  color: #e6d2a2;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 
-    z-index: 3;
+  position: absolute;
+  top: 50px;
+  left: 50px;
 
-}
-
-  .startButton:hover {
-    cursor: pointer;
-    transition: 0.3s ease;
-    border: double #e6d2a2 5px;
+  z-index: 3;
 
 }
 
-.buttonContainer_ { 
-    position: relative;
-    max-width: 200px;
-    min-width: 200px;
-    width: 200px;
-    height: 200px;
-    margin: 20px;
-    left: 218px;
-    top: -8px;
+.startButton:hover {
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: double #e6d2a2 5px;
+
+}
+
+.buttonContainer_ {
+  position: relative;
+  max-width: 200px;
+  min-width: 200px;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  left: 218px;
+  top: -8px;
 
 }
 
 body {
-    background-image: url('/images/grunge-certificate-with-vintage-ornamental-frame.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #e6d2a2;
+  background-image: url('/images/grunge-certificate-with-vintage-ornamental-frame.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #e6d2a2;
 }
 
 .optionsContainer {
-    position: relative;
-    max-width: 200px;
-    min-width: 200px;
-    width: 200px;
-    height: 200px;
-    margin: 20px;
-    left: 218px;
-    bottom: -250px;
-    z-index: 5;
+  position: relative;
+  max-width: 200px;
+  min-width: 200px;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  left: 218px;
+  bottom: -250px;
+  z-index: 5;
 }
 
 .options {
-    position: absolute;
-    left: 25px;
-    top: 48px;
-    font-size: 18px;
-    border: none;
-    /* background-size: 0px;
-    /* background-color: #e6c9a1; */ 
-    background: none;
-    font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
-    width: 150px;
+  position: absolute;
+  left: 25px;
+  top: 48px;
+  font-size: 18px;
+  border: none;
+  /* background-size: 0px;
+    /* background-color: #e6c9a1; */
+  background: none;
+  font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
+  width: 150px;
 
-    
-     
+
+
 }
 
 .options:hover {
-    cursor: pointer;
-    text-decoration: underline;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .difficultybtn {
-    position: absolute;
-    left: 25px;
-    top: 84px;
-    font-size: 18px;
-    border: none;
-    background: none;
-    font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
-    width: 150px;
-     
+  position: absolute;
+  left: 25px;
+  top: 84px;
+  font-size: 18px;
+  border: none;
+  background: none;
+  font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
+  width: 150px;
+
 }
 
 .difficultybtn:hover {
-    cursor: pointer;
-    text-decoration: underline;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .leaderboardbtn {
-    position: absolute;
-    left: 25px;
-    top: 123px;
-    font-size: 16px;
-    border: none;
-    background: none;
-    font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
-    width: 150px;
-     
+  position: absolute;
+  left: 25px;
+  top: 123px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
+  width: 150px;
+
 }
 
 .leaderboardbtn:hover {
-    cursor: pointer;
-    text-decoration: underline;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .optbg {
-    position: absolute;
-    left: 40px;
-    top: 52.9px;
-    font-size: 11px;
-    border: none;
-    background-size: 50px;
-    background-color:#e6c9a1;
-    font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
-    width: 120px;
-    height: 19px;
-    color: #e6c9a1;
+  position: absolute;
+  left: 40px;
+  top: 52.9px;
+  font-size: 11px;
+  border: none;
+  background-size: 50px;
+  background-color: #e6c9a1;
+  font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
+  width: 120px;
+  height: 19px;
+  color: #e6c9a1;
 }
 
 .dbg {
-    position: absolute;
-    left: 40px;
-    top: 90px;
-    font-size: 11px;
-    border: none;
-    background-size: 50px;
-    background-color:#e6c9a1;
-    font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
-    width: 120px;
-    height: 18px;
-    color: #e6c9a1;
+  position: absolute;
+  left: 40px;
+  top: 90px;
+  font-size: 11px;
+  border: none;
+  background-size: 50px;
+  background-color: #e6c9a1;
+  font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
+  width: 120px;
+  height: 18px;
+  color: #e6c9a1;
 }
 
 .lbBg {
-    position: absolute;
-    left: 40px;
-    top: 128px;
-    font-size: 11px;
-    border: none;
-    background-size: 50px;
-    background-color:#e6c9a1;
-    font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
-    width: 120px;
-    height: 18px;
-    color: #e6c9a1;
+  position: absolute;
+  left: 40px;
+  top: 128px;
+  font-size: 11px;
+  border: none;
+  background-size: 50px;
+  background-color: #e6c9a1;
+  font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
+  width: 120px;
+  height: 18px;
+  color: #e6c9a1;
 }
 
 .popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-  }
-  
-  .popup-content {
-    background-color: #fff;
-    width: 50%;
-    max-width: 400px;
-    margin: 100px auto;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    position: relative;
-  }
-  
-  .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.popup-content {
+  background-color: #fff;
+  width: 50%;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
 
 
-  }
+}
 
-  .lopt {
-    font-size: 27px;
-    font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
-  }
-  
-  select {
-    
-    background-image: url('/images/_a242d9ea-5103-4263-93e7-1116a5c14196.jpeg');
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: contain;
-    padding-right: 20px; /* adjust padding to accommodate arrow icon */
-    -webkit-appearance: none; /* For webkit browsers */
-    -moz-appearance: none; /* For Firefox */
-    appearance: none; /* Remove default arrow */
-    padding: 4px;
-    width: 120px;
-    min-width: 120px;
-    border: solid 2px goldenrod;
-    border-radius: 20px;
+.lopt {
+  font-size: 27px;
+  font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
+}
+
+select {
+
+  background-image: url('/images/_a242d9ea-5103-4263-93e7-1116a5c14196.jpeg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  padding-right: 20px;
+  /* adjust padding to accommodate arrow icon */
+  -webkit-appearance: none;
+  /* For webkit browsers */
+  -moz-appearance: none;
+  /* For Firefox */
+  appearance: none;
+  /* Remove default arrow */
+  padding: 4px;
+  width: 120px;
+  min-width: 120px;
+  border: solid 2px goldenrod;
+  border-radius: 20px;
 }
 
 .popup-content {
 
-    background-image: url('/images/grunge-certificate-with-vintage-ornamental-frame.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    border: solid 3px goldenrod;
-    
+  background-image: url('/images/grunge-certificate-with-vintage-ornamental-frame.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  border: solid 3px goldenrod;
+
 }
 
 .musicVolume {
-    color: goldenrod;
+  color: goldenrod;
 }
 
 .popupL {
-    display: none; /* Hide the popup by default */
-    position: fixed; /* Position the popup relative to the viewport */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    z-index: 999; /* Ensure the popup is on top of other content */
-  }
-  
-  .popup-contentL {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Center the popup content */
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
-  }
-  
-  .closeL {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-  }
-  
-  .popup-contentL {
-    background-image: url('/images/grunge-certificate-with-vintage-ornamental-frame.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    border: solid 3px goldenrod;
-    font-size: 27px;
-    font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
+  display: none;
+  /* Hide the popup by default */
+  position: fixed;
+  /* Position the popup relative to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent background */
+  z-index: 999;
+  /* Ensure the popup is on top of other content */
+}
 
-  }
+.popup-contentL {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Center the popup content */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* Add a shadow effect */
+}
 
-  .optl {
-  
-    margin: 5px
-  }
+.closeL {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
 
-  .buttonL {
-    background-image: url('/images/grunge-certificate-with-vintage-ornamental-frame.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    border: solid 3px goldenrod;
-  }
-
-  .buttonL:hover {
-    background-image: none;
-    background-color: goldenrod;
-  }
-
-.lrbtn {
-    background-color: transparent;
-    background-image: url('/images/knightIcon.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    /* right: 100px;
-    top: 50px; */
-    border-color: transparent;
+.popup-contentL {
+  background-image: url('/images/grunge-certificate-with-vintage-ornamental-frame.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  border: solid 3px goldenrod;
+  font-size: 27px;
+  font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
 
 }
+
+.optl {
+
+  margin: 5px
+}
+
+.buttonL {
+  background-image: url('/images/grunge-certificate-with-vintage-ornamental-frame.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  border: solid 3px goldenrod;
+}
+
+.buttonL:hover {
+  background-image: none;
+  background-color: goldenrod;
+}
+
+.lrbtn {
+  background-color: transparent;
+  background-image: url('/images/knightIcon.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* right: 100px;
+    top: 50px; */
+  border-color: transparent;
+
+}
+
 .lrbtn:hover {
-    cursor: pointer;
-    transition: 0.3s ease;
-    border: double #e6d2a2 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: double #e6d2a2 5px;
 }
 
 .lbtncontainer {
-    /* width: 60px;
+  /* width: 60px;
     height: 60px; */
-    width: 200px;
-    height: 200px;
-    align-items: center;
-    position: relative;
-    background-position: center;
-    /* right: 10px; */
-    /* top: 10px; */
-    left: 492px;
-    bottom: 380px;
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  position: relative;
+  background-position: center;
+  /* right: 10px; */
+  /* top: 10px; */
+  left: 492px;
+  bottom: 380px;
 
-    z-index: 5;
+  z-index: 5;
 }
 
 /* Leader Board */
 
 .popup-lb {
-  display: none; /* Hide the popup by default */
-  position: fixed; /* Position the popup relative to the viewport */
+  display: none;
+  /* Hide the popup by default */
+  position: fixed;
+  /* Position the popup relative to the viewport */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  z-index: 999; /* Ensure the popup is on top of other content */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent background */
+  z-index: 999;
+  /* Ensure the popup is on top of other content */
 }
 
 .popup-content-lb {
@@ -364,7 +379,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center the popup content */
+  transform: translate(-50%, -50%);
+  /* Center the popup content */
   /* border-radius: 5px; */
 
 
@@ -381,12 +397,12 @@ body {
 }
 
 .close-lb:hover {
-    /* position: absolute;
+  /* position: absolute;
     align-self: center; */
-    cursor: pointer;
-    /* transition: 0.3s ease; */
-    /* border: double #e6d2a2 5px; */
-    text-decoration: underline;
+  cursor: pointer;
+  /* transition: 0.3s ease; */
+  /* border: double #e6d2a2 5px; */
+  text-decoration: underline;
 }
 
 .leaderboardtitle {
@@ -405,32 +421,45 @@ body {
   position: absolute;
   left: 2px;
   top: 2px;
-  
+
 }
 
 .startgame {
   width: 100px;
   height: 100px;
- 
- 
 
+
+
+}
+
+.startContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Make the container full height of the viewport */
 }
 
 .startgamebtn {
-  width: 100px;
-  height: 50px;
+  width: 200px;
+  /* Adjust button width as needed */
+  height: 60px;
+  /* Adjust button height as needed */
   background-color: goldenrod;
-  border-radius: 5px;
+  border-radius: 10px;
   font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
-  font-size: 10px;
-  
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .startgamebtn:hover {
-  cursor: pointer;
-  transition: 0.3s ease;
-  border: double #e6d2a2 5px;
+  background-color: #ffcc00;
+  /* Change color on hover */
 }
+
 
 .btnstart {
 
@@ -441,7 +470,7 @@ body {
   height: 60px;
   border-radius: 10px;
   margin-left: 15px;
-  
+
 }
 
 .btnstart:hover {
@@ -451,7 +480,7 @@ body {
 .startContainer {
   height: 100px;
   font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
-  
+
 }
 
 #body2 {
@@ -464,26 +493,30 @@ body {
   padding: 0px;
   margin: 0px;
   font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
-  
+
 }
 
 #b1 {
   align-items: center;
   font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
-  
+
 }
 
 /* Difficulty popup */
 
 .popup-df {
-  display: none; /* Hide the popup by default */
-  position: fixed; /* Position the popup relative to the viewport */
+  display: none;
+  /* Hide the popup by default */
+  position: fixed;
+  /* Position the popup relative to the viewport */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  z-index: 999; /* Ensure the popup is on top of other content */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent background */
+  z-index: 999;
+  /* Ensure the popup is on top of other content */
 }
 
 .popup-content-df {
@@ -499,7 +532,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center the popup content */
+  transform: translate(-50%, -50%);
+  /* Center the popup content */
   /* border-radius: 5px; */
 
 
@@ -516,12 +550,12 @@ body {
 }
 
 .close-df:hover {
-    /* position: absolute;
+  /* position: absolute;
     align-self: center; */
-    cursor: pointer;
-    /* transition: 0.3s ease; */
-    /* border: double #e6d2a2 5px; */
-    text-decoration: underline;
+  cursor: pointer;
+  /* transition: 0.3s ease; */
+  /* border: double #e6d2a2 5px; */
+  text-decoration: underline;
 }
 
 .difficultytitle {
@@ -530,7 +564,7 @@ body {
   top: 220px;
   left: 280px;
   font-size: 40px;
-  
+
 }
 
 #difficultyform {
@@ -545,20 +579,22 @@ body {
 .arrowkeyscontainer {
   width: 100px;
   text-align: center;
-  
+
 }
+
 #arrowkey {
   width: 90px;
   /* height: 50px; */
 }
 
-.instArrow{
+.instArrow {
 
   font-size: 20px;
 }
 
 .popup-in {
-  display: none; /* Initially hide the popup */
+  display: none;
+  /* Initially hide the popup */
   position: absolute;
   /* top: 140px;
   left: 600px; */
@@ -601,11 +637,29 @@ body {
   width: 60px;
   height: 30px;
   transform: rotate(100deg);
- 
+
 }
 
 .music2 {
   position: absolute;
   bottom: 5px;
   left: 5px;
+}
+
+#timer {
+  position: absolute;
+  top: 20px;
+  /* Adjust the top position as needed */
+  right: 20px;
+  /* Adjust the right position as needed */
+  font-size: 20px;
+  /* Adjust the font size as needed */
+  color: white;
+  /* Adjust the color as needed */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Adjust the background color and opacity as needed */
+  padding: 10px;
+  /* Adjust the padding as needed */
+  border-radius: 5px;
+  /* Adjust the border radius as needed */
 }

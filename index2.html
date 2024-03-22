@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,45 +8,44 @@
 
     <style>
         @font-face {
-        font-family: 'Sketch Gothic School';
-        src: url('fonts/sketch_gothic_school/Sketch Gothic School.ttf') format('truetype'); 
+            font-family: 'Sketch Gothic School';
+            src: url('fonts/sketch_gothic_school/Sketch Gothic School.ttf') format('truetype');
         }
 
         @font-face {
             font-family: 'The Eldians';
             src: url('fonts/the_eldians/The Eldians.ttf') format('truetype');
         }
-
     </style>
 
 
-        <!-- Illia's links -->
-        <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!-- Illia's links -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 
     <link href="styles/HP2.css" rel="stylesheet">
     <link href="MAZE/style.css" rel="stylesheet">
 </head>
+
 <body id="b1">
 
-<div id="body2">
-    <div class="startContainer">
-        <form id="settings" action="" class="startgame">
-            <input id="submit" type="submit" value="Enter Dungeon" class="startgamebtn">
-        </form>
-    </div>
-    <div class="bhcontainer">
+    <div id="body2">
+        <div class="startContainer">
+            <button id="startButton" class="startgamebtn">Enter Dungeon</button>
+        </div>
+        <div class="bhcontainer">
 
-        <label for="bhbtn">Back Home</label>
-        <a href="indexHP2.html"><button class="btnstart" id="bhbtn"></button></a>
-    </div>
+            <label for="bhbtn">Back Home</label>
+            <a href="indexHP2.html"><button class="btnstart" id="bhbtn"></button></a>
+        </div>
         <div class="complete">
             <h3 class="mazecompleted">Maze Completed!</h3>
             <button class="replay" id="submit">Play again</button>
             <button class="close" id="submit">Close</button>
         </div>
+        <div id="timer">Time Left: 05:00</div>
 
-        
+
         <canvas class="maze" width="850" height="700"></canvas>
 
         <div class="arrowkeyscontainer">
@@ -62,35 +62,43 @@
         <div class="music2">
 
             <!-- <label for="musicVolume" class="lopt">Music Volume</label> -->
-            
+
             <!-- <input type="range" class="musicVolume" id="musicVolume2" min="0" max="100" value="50"> -->
-            
+
             <audio id="bg-music2" autoplay loop>
-            
-              <source src="music/arrival-of-a-princess-aaron-paul-low-main-version-20384-01-00.mp3" type="audio/mp3">
-                      Your browser does not support the audio element.
-                  </audio>
-            
-                  <!-- <span id="volume-value" class="lopt">50</span> -->
+
+                <source src="music/arrival-of-a-princess-aaron-paul-low-main-version-20384-01-00.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+
+            <!-- <span id="volume-value" class="lopt">50</span> -->
 
         </div>
 
-            <!-- Instruction PopUp -->
-            
+        <!-- Instruction PopUp -->
+
         <div class="popincon">
             <div id="popup-in" class="popup-in">
                 <div class="popup-content-in">
-                <span class="close-in" id="close-popup-in">&times;</span>
-                
-                <p>Click to start<img class="arrowins" src="/images/imgbin-arrow-icon-arrow-right-red-arrow-illustration-mwSAyGMQhWh6wNfm2QjYvBthg.png"></p>
+                    <span class="close-in" id="close-popup-in">&times;</span>
+
+                    <p>Click to start<img class="arrowins"
+                            src="/images/imgbin-arrow-icon-arrow-right-red-arrow-illustration-mwSAyGMQhWh6wNfm2QjYvBthg.png">
+                    </p>
 
 
                 </div>
             </div>
-        </div>  
+        </div>
+
+        <audio id="keySound" src="music/retro-game-coin-pickup-jam-fx-1-00-03.mp3">
+        </audio>
+        <audio id="keySound1" src="music/complete.mp3">
+        </audio>
 
         <script src="MAZE/maze.js"></script>
         <script src="MAZE/settings.js"></script>
-</div>
+    </div>
 </body>
+
 </html>
