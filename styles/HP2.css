@@ -408,28 +408,32 @@ body {
   
 }
 
-.startgame {
-  width: 100px;
-  height: 100px;
- 
- 
-
+.startContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Make the container full height of the viewport */
 }
 
 .startgamebtn {
-  width: 100px;
-  height: 50px;
+  width: 200px;
+  /* Adjust button width as needed */
+  height: 60px;
+  /* Adjust button height as needed */
   background-color: goldenrod;
-  border-radius: 5px;
+  border-radius: 10px;
   font-family: "Bungee Inline", 'Sketch Gothic School', 'The Eldians', sans-serif;
-  font-size: 10px;
-  
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .startgamebtn:hover {
-  cursor: pointer;
-  transition: 0.3s ease;
-  border: double #e6d2a2 5px;
+  background-color: #ffcc00;
+  /* Change color on hover */
 }
 
 .btnstart {
@@ -614,3 +618,20 @@ body {
     overflow: hidden;
 }
 
+#timer {
+  position: absolute;
+  top: 20px;
+  /* Adjust the top position as needed */
+  right: 20px;
+  /* Adjust the right position as needed */
+  font-size: 20px;
+  /* Adjust the font size as needed */
+  color: white;
+  /* Adjust the color as needed */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Adjust the background color and opacity as needed */
+  padding: 10px;
+  /* Adjust the padding as needed */
+  border-radius: 5px;
+  /* Adjust the border radius as needed */
+}
